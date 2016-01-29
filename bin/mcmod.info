@@ -1,0 +1,21 @@
+[
+{
+  "modid": "ChaosLore",
+  "name": "Chaotic Lore",
+  "description": "Bringing the power of experience into the world itself!",
+  "version": "0.1",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "Serolar"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
