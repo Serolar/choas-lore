@@ -1,9 +1,9 @@
 package com.serolar.chaoslore.block;
 
-public class BlockWisdom extends BlockChaosLore
-{
-	public BlockWisdom()
-	{
+import com.serolar.chaoslore.creativetab.CreativeTabChaosLore;
+
+public class BlockWisdom extends BlockChaosLore {
+	public BlockWisdom() {
 		super();
 		this.setBlockName("wisdomBlock");
 	}
