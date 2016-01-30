@@ -1,6 +1,7 @@
 package com.serolar.chaoslore;
 
 import com.serolar.chaoslore.handler.ConfigurationHandler;
+import com.serolar.chaoslore.init.ModBlocks;
 import com.serolar.chaoslore.init.ModItems;
 import com.serolar.chaoslore.proxy.IProxy;
 import com.serolar.chaoslore.reference.Reference;
@@ -30,6 +31,8 @@ public class ChaosLore
 		LogHelper.info("Loremen! Attention! Time to bring it all out!");
 		
 		ModItems.init();
+		
+		ModBlocks.init();
 	};
 	
 	@Mod.EventHandler
