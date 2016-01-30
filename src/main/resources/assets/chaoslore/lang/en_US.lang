@@ -1,3 +1,12 @@
+# Keys
+keys.chaoslore.category=Chaotic Lore
+keys.chaoslore.learn=Learn
+
+#Creative Tabs
+itemGroup.chaoslore=Chaotic Lore
+
+# Items
 item.chaoslore:wisdomDust.name=Wisdom Dust
 
-tile.chaoslore:wisdomBlock.name=Block of Wisdom
+# Blocks
+tile.chaoslore:wisdomBlock.name=Solid Wisdom
