@@ -1,5 +1,6 @@
 package com.serolar.chaoslore;
 
+import com.serolar.chaoslore.client.handler.KeyInputEventHandler;
 import com.serolar.chaoslore.handler.ConfigurationHandler;
 import com.serolar.chaoslore.init.ModBlocks;
 import com.serolar.chaoslore.init.ModItems;
@@ -27,16 +28,20 @@ public class ChaosLore {
 	public void preInit(FMLPreInitializationEvent event) {
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
-		LogHelper.info("Loremen! Attention! Time to bring it all out!");
 		
+		proxy.registerKeyBindings();
 		ModItems.init();
-		
 		ModBlocks.init();
+		
+		LogHelper.info("Loremen! Attention! Time to bring it all out!");
 	};
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
+		FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
+	
 		Recipes.init();
+		
 		LogHelper.info("Just a little more! The world shall know the Lore's Chaos!");
 	};
 	
