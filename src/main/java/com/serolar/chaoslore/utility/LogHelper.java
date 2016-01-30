@@ -4,10 +4,8 @@ import org.apache.logging.log4j.Level;
 import com.serolar.chaoslore.reference.Reference;
 import cpw.mods.fml.common.FMLLog;
 
-public class LogHelper 
-{
-	public static void log(Level logLevel, Object object)
-	{
+public class LogHelper {
+	public static void log(Level logLevel, Object object) {
 		FMLLog.log(Reference.MOD_NAME, logLevel, String.valueOf(object));
 	}
 	
