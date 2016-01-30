@@ -1,6 +1,7 @@
 package com.serolar.chaoslore;
 
 import com.serolar.chaoslore.handler.ConfigurationHandler;
+import com.serolar.chaoslore.init.ModItems;
 import com.serolar.chaoslore.proxy.IProxy;
 import com.serolar.chaoslore.reference.Reference;
 import com.serolar.chaoslore.utility.LogHelper;
@@ -27,6 +28,8 @@ public class ChaosLore
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 		LogHelper.info("Loremen! Attention! Time to bring it all out!");
+		
+		ModItems.init();
 	};
 	
 	@Mod.EventHandler
